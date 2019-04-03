@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+body {
+  background: #fff;
+}
+
+section {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  text-transform: uppercase;
+  opacity: .1;
+  font-size: 1.2em;
+}
+
+section h2:after {
+  content: '';
+  border-bottom: solid #000 2px;
+  display: block;
+}
+
+.color-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.color-container .color-box {
+  flex: 1 1 30%;
+  height: 8em;
+  margin: 5px;
+  position: relative;
+}
+
+.color-container .color-box.primary {
+  background: #666a86;
+}
+
+.color-container .color-box.primary:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #727694;
+  bottom: 0;
+  left: 0;
+}
+
+.color-container .color-box.primary:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #5b5f78;
+  bottom: 0;
+  right: 0;
+}
+
+.color-container .color-box.secondary {
+  background: #788aa3;
+}
+
+.color-container .color-box.secondary:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #8797ad;
+  bottom: 0;
+  left: 0;
+}
+
+.color-container .color-box.secondary:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #697d99;
+  bottom: 0;
+  right: 0;
+}
+
+.color-container .color-box.tertiary {
+  background: #92b6b1;
+}
+
+.color-container .color-box.tertiary:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #a1c0bc;
+  bottom: 0;
+  left: 0;
+}
+
+.color-container .color-box.tertiary:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background: #83aca6;
+  bottom: 0;
+  right: 0;
+}
+
+.font-container.title {
+  font-size: 1rem;
+}
+
+.font-container .primary-font:after {
+  content: "Roboto";
+}
+
+.font-container .secondary-font:after {
+  content: "";
+}
